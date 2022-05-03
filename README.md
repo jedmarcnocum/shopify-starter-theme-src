@@ -5,6 +5,14 @@
 
 
 
+##### Requirements:
+
+1. [Shopify CLI](https://shopify.dev/apps/tools/cli/installation)
+2. [Shopify Github Integration](https://shopify.dev/themes/tools/github/getting-started) 
+3. [Git Subrepo](https://github.com/ingydotnet/git-subrepo)
+
+
+
 ##### Example repository for source and compiled code:
 
 Source repo 
@@ -13,7 +21,9 @@ Source repo
 Compiled repo: 
 (`shopify-starter-theme-dist`) - compiled theme files. It lives inside the source repo under the folder name `dist`. This repository is connected to your Shopify store via [Shopify Github Integration](https://shopify.dev/themes/tools/github)
 
-**Structure:**
+
+
+##### Project structure:
 
 ```
 .
@@ -23,12 +33,14 @@ Compiled repo:
 └── README.md
 ```
 
-Workflow:
+
+
+##### Workflow:
 
 1. Let's say the development starts with a feature branch named `slideshow`. This branch will be developed under your source repo. 
 2. Once you're done developing the branch `slideshow`, you can now push the branch and create a PR on your source github repo (`shopify-starter-theme-src`). 
 3. Once your feature branch is now merged to main/master, The next step is to push those changes to your compiled repo (`shopify-starter-theme-dist`) by executing the command: `git subrepo push dist --branch="branch_name_here"`. 
 4. A new branch will be pushed on your compiled repo (`shopify-starter-theme-dist`), you can now do a PR and finalize stuff. Once the changes are merged to main/master, Shopify will pull those changes to the theme connected to your Shopify store. 
 
-Note: I recommend to pull the changes on the compiled repo every time you develop under your source repo -- the reason for this is for your source repo to always fetch the latest changes made to the compiled repo (via shopify theme editor changes).
+Note: I recommend to pull the changes on the compiled repo every time you develop under your source repo -- the reason for this is for your source repo to always fetch the latest changes made to the compiled repo (via shopify theme editor changes). To do this, simply run `git subrepo pull dist --branch="main"`, we are pulling from branch main since this branch will most likely be the branch connected to your Live theme in Shopify.
 
