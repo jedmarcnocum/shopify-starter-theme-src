@@ -6,6 +6,7 @@
 [subrepo]
 	remote = https://github.com/jedmarcnocum/shopify-starter-theme-dist
 	branch = main
-	commit = 
+	commit = 8955eb27c09d4efafb91f4d11794b4d13eeee9bf
 	method = merge
 	cmdver = 0.4.3
+	parent = 34d4a94d5287bf7182866015127d19f3a28afbbc
