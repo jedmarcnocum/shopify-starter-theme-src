@@ -1,0 +1,120 @@
+{
+  "settings_schema": {
+    "colors": {
+      "name": "Colors",
+      "settings": {
+        "color_primary": {
+          "label": "Primary",
+          "info": "Used mostly for heading/text"
+        },
+        "color_secondary": {
+          "label": "Secondary",
+          "info": "Second option for primary. Can be used on hover effects"
+        },
+        "color_info": {
+          "label": "Info",
+          "info": "Used mostly for links/buttons/CTA. The color that stands-out in the theme"
+        },
+        "color_accent": {
+          "label": "Accent",
+          "info": "Secondary color similar to info"
+        },
+        "color_accent_2": {
+          "label": "Accent #2",
+          "info": "Tertiary color similar to info"
+        },
+        "color_success": {
+          "label": "Success",
+          "info": "Success-related color. ie: in form successful message"
+        }
+      }
+    },
+    "typography": {
+      "name": "Typography",
+      "settings": {
+        "font_heading": {
+          "label": "Headings"
+        },
+        "font_body": {
+          "label": "Body text"
+        }
+      }
+    },
+    "favicon": {
+      "name": "Favicon",
+      "settings": {
+        "label": "Image",
+        "info": "32 x 32px .png recommended"
+      }
+    },
+    "social-media": {
+      "name": "Social media",
+      "settings": {
+        "header": {
+          "content": "Social accounts"
+        },
+        "social_twitter_link": {
+          "label": "Twitter",
+          "info": "https://twitter.com/shopify"
+        },
+        "social_facebook_link": {
+          "label": "Facebook",
+          "info": "https://facebook.com/shopify"
+        },
+        "social_pinterest_link": {
+          "label": "Pinterest",
+          "info": "https://pinterest.com/shopify"
+        },
+        "social_instagram_link": {
+          "label": "Instagram",
+          "info": "http://instagram.com/shopify"
+        },
+        "social_tiktok_link": {
+          "label": "TikTok",
+          "info": "https://tiktok.com/@shopify"
+        },
+        "social_tumblr_link": {
+          "label": "Tumblr",
+          "info": "https://shopify.tumblr.com"
+        },
+        "social_snapchat_link": {
+          "label": "Snapchat",
+          "info": "https://www.snapchat.com/add/shopify"
+        },
+        "social_youtube_link": {
+          "label": "YouTube",
+          "info": "https://www.youtube.com/shopify"
+        },
+        "social_vimeo_link": {
+          "label": "Vimeo",
+          "info": "https://vimeo.com/shopify"
+        }
+      }
+    }
+  },
+  "sections": {
+    "header": {
+      "name": "Header",
+      "settings": {
+        "paragraph": "Add custom settings for this section. [Learn more](https://shopify.dev/themes/architecture/settings)",
+        "headers": {
+          "announcement": "Announcement bar",
+          "logo": "Logo",
+          "navbar": "Navbar"
+        },
+        "announcement_bar_enabled": "Show announcement",
+        "announcement_bar_home_page_only": "Show on home page only",
+        "announcement_bar_text": "Announcement text",
+        "announcement_bar_bg_color": "Announcement bar BG color",
+        "navbar_logo": "Shop Logo",
+        "menu": "Menu"
+      }
+    },
+    "footer": {
+      "name": "Footer",
+      "settings": {
+        "paragraph": "Add custom settings for this section. [Learn more](https://shopify.dev/themes/architecture/settings)"
+      }
+    }
+  }
+}
